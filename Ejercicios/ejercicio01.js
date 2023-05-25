@@ -88,3 +88,35 @@ const mostrarInformacionSuperHeroes = (akas) => {
 }
 
 mostrarInformacionSuperHeroes(["Thor", "Hulk", "Joker", "Spider-Man"]);
+
+/* La terminal devuelve: 
+$ node .\ejercicio01.js
+
+################## Spider-Man ##################
+Nombre real: Peter Parker
+Poderes: Balanceo, Telarañas pegajosas, Sentido aracnido
+Equipo: Los vengadores
+
+
+################## Thor ##################
+Nombre real: Thor Odinson
+Poderes: Mjolnir, Viento y trueno
+Equipo: Los vengadores
+
+
+################## Hulk ##################
+Nombre real: Bruce Banner
+Poderes: Fuerza sobrehumana, Invulnerabilidad
+Equipo: Los vengadores
+
+
+################## Joker ##################
+Joker no existe en la base de datos
+
+
+################## Spider-Man ##################
+Nombre real: Peter Parker
+Poderes: Balanceo, Telarañas pegajosas, Sentido aracnido
+Equipo: Los vengadores
+
+*/
