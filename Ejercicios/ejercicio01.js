@@ -53,15 +53,38 @@ const infoSuper = {
 
 function mostrarInfoSuperHerore(aka){
 
+    console.log(``);
+    console.log(`################## ${aka} ##################`);
     // Comprobar si el superheroe existe dentro del objeto
     if(aka in infoSuper){
     // Conseguir la info de ese superHeroe
-
+    const informacion = infoSuper[aka];
     // Mostrar la info
+    console.log(`Nombre real: ${informacion.nombreReal}`);
+        // Para dar formato al imprimir del array, usamos un '.join', donde se pone el caracter que se coloca entre los elementos
+    console.log(`Poderes: ${informacion.poderes.join(', ')}`);
+    console.log(`Equipo: ${informacion.equipo}`);
+    console.log(``)
+
     }else{
-        console.log("No existe ese superHeroe")
+        console.log(`${aka} no existe en la base de datos`);
+        console.log(``);
     }
 
 }
+    // Opcion 1 de declarar funciones
+mostrarInfoSuperHerore("Spider-Man");
+    // Opcion 2 de declarar funciones
+const mostrarInformacionSuperHeroes = (akas) => {
 
-mostrarInfoSuperHerore("Batman");
+    // Recorrer todos los nombres
+    akas.forEach(nombre => {
+
+        // Mostrar la info (usar funcion anterior)
+        mostrarInfoSuperHerore(nombre);
+        
+    });
+    
+}
+
+mostrarInformacionSuperHeroes(["Thor", "Hulk", "Joker", "Spider-Man"]);
